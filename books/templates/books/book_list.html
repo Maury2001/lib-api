@@ -1,0 +1,21 @@
+<!-- <h1>All books</h1>
+{% for book in object_list %}
+
+
+
+{% endfor%}
+ -->
+
+ {% block content %}
+ 
+{% for book in books  %}
+<ul>
+    <li>title: {{ book.title}}</li>
+    <li>subtitle: {{book.subtitle}}</li>
+    <li>Author:  {{book.author}}</li>
+    <li>isbn: {{book.isbn}}</li>
+</ul>
+
+{% endfor %}
+ 
+ {% endblock content %}
